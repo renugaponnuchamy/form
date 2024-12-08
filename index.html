@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color: blue;
+        
+    }
+   .textcolor {
+        color:rgb(36, 36, 216);
+       
+}
+    .checkbox-round{
+        width: 1.3em;
+height: 1.3em;
+background-color: white;
+border-radius: 50%;
+vertical-align: middle;
+border: 1px solid;
+appearance: none;
+-webkit-appearance: none;
+outline: none;
+cursor: pointer;
+color:black;
+
+    }
+    .flex{
+      display:grid;
+      /* height:100vh; */
+      width:100%;
+      place-items: center;
+
+    }
+    .star{
+        color:red;
+        padding:3px;
+    }
+    /* .child1{
+        position:relative
+    } */
+   
+    .child2{
+        /* margin-top:20px; */
+    }
+    .child3{
+        margin-top:0px;
+    }
+    .btn{
+        
+        background-color: #2c18df;
+        width: 100%;
+        border-radius: 7px;
+     
+    }
+    .btn-btn{
+        position: relative;
+        padding:10px 12px;
+
+    }
+    .input{
+        margin-top: 10px;
+   /* border-radius: 5px 5px 5px 5px; */
+   /* border-color: white; */
+    }
+    .label{
+        width: 100%;
+        margin-top: 50px;
+
+    }
+</style>
+<body>
+<form class="flex">
+ 
+ <h1>Software Request</h1>
+<div class="child1">
+      <label for="name">Name<span class="star">*</span></label><br/>
+    <input type="text" class="input"name="" id="name"><br/>
+    <label for="empid" >Employee ID<span class="star">*</span></label><br/>
+    <input type="text" class="input"name="" id="empid"><br/>
+    <label for="email" class="label"> Email<span class="star">*</span></label><br/>
+    <input type="email" class="input"name="" id="email"><br/>
+    <label for="mobno" > Mobile No/Extn.No<span class="star">*</span></label><br/>
+    <input type="text" class="input"name="" id="mobno"><br/>
+   
+</div>
+<div class="child2">
+<legend>Which software do u require?</legend><br/>
+<input type="checkbox" id="software" name="" >
+<label for="software" class="textcolor">Software A</label><br/>
+<input type="checkbox" id="software" name="" >
+<label for="software" class="textcolor">Software B</label><br/>
+<input type="checkbox" id="software" name="" >
+<label for="software" class="textcolor">Software C</label><br/>
+</div>
+
+<div>
+ <div class="child3">   
+<legend>How urgently  do u need it?</legend><br/>
+<input type="checkbox" class="checkbox-round" id="software1" name="" >
+<label for="software1" class="textcolor">As soon as possible </label><br/>
+<input type="checkbox" class="checkbox-round"id="software2" name="" >
+<label for="software2" class="textcolor">With in 2 to 3 weeks</label><br/>
+<input type="checkbox" class="checkbox-round"id="software3" name="" >
+<label for="software3" class="textcolor">I'm in no hurry</label><br/>
+
+</div>
+<div class="btn-btn">
+    <button type="button" class="btn" >Request</button>
+</div>
+
+</form>
+</body>
+</html>
